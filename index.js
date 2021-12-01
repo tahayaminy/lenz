@@ -26,8 +26,8 @@ function imageZoom(){
         event.preventDefault();
         var pos=cursorPos(event);
         result.style.opacity=1;
-        result.style.top=(event.screenY-40) +'px';
-        result.style.left=(event.screenX-40)  +'px';
+        result.style.top=(event.clientY+40) +'px';
+        result.style.left=(event.clientX-80)  +'px';
         var x=pos.x - (lenz.offsetWidth/2);
         var y=pos.y - (lenz.offsetHeight/2);
 
